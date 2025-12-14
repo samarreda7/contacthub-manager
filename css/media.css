@@ -1,0 +1,17 @@
+@media (min-width: 576px) {
+  .fs-add-button {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .text-small {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}

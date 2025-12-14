@@ -1,0 +1,250 @@
+.square-meduim {
+  width: 45px;
+  height: 45px;
+}
+.square-large {
+  width: 85px;
+  height: 85px;
+}
+.contactimg-square {
+  width: 60px;
+  height: 60px;
+}
+.contactimg-square {
+  line-height: 1;
+}
+.small-suare {
+  width: 40px;
+  height: 40px;
+}
+.iconcontact-square {
+  width: 27px;
+  height: 27px;
+}
+
+.small-suare-hover:hover {
+  background: rgb(243, 244, 246);
+  color: rgb(54, 65, 83) !important;
+}
+.tiny-suare {
+  width: 30px;
+  height: 30px;
+}
+.tiny-suare-hover:hover {
+  background: rgb(243, 244, 246);
+  color: rgb(54, 65, 83) !important;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.text-gray {
+  color: rgb(106, 114, 130);
+}
+.bg-lightgray {
+  background: rgb(248, 250, 252);
+}
+
+.bg-meduimgray {
+  background: rgb(243, 244, 246);
+}
+.square-meduim {
+  width: 45px;
+  height: 45px;
+}
+.bg-purple-blue {
+  background: linear-gradient(45deg, rgb(124, 37, 253) 10%, rgb(90, 54, 248));
+}
+.fs-add-button {
+  font-size: 0.6rem;
+}
+.nav-button-hover:hover {
+  box-shadow: 1px 1px 20px rgba(139, 57, 254, 0.677);
+  transform: translate(-1px, -2px);
+}
+.transition-3 {
+  transition: all 0.3s;
+}
+.text-purple {
+  color: rgb(140, 57, 254);
+}
+.fs-small {
+  font-size: 0.75rem;
+}
+.fit-content {
+  width: fit-content !important;
+}
+.text-small{
+  font-size: .7rem;
+}
+.bg-blue {
+  background: rgb(25, 101, 253);
+}
+.text-blue {
+  color: rgb(25, 101, 253);
+}
+
+.bg-lightblue {
+  background: rgb(219, 234, 254);
+}
+.box-shadow-blue {
+  box-shadow: 0.5px 0.5px 10px rgb(25, 101, 253);
+}
+.bg-orange {
+  background: rgb(255, 129, 0);
+}
+.bg-lightorange {
+  background: rgb(255, 248, 236);
+}
+
+.box-shadow-orange {
+  box-shadow: 0.5px 0.5px 10px rgb(255, 129, 0);
+}
+.bg-red {
+  background: rgb(236, 0, 37);
+}
+.bg-lightred {
+  background: rgb(254, 241, 242);
+}
+.box-shadow-red {
+  box-shadow: 0.5px 0.5px 10px rgb(236, 0, 37);
+}
+.border-gray {
+  border-color: rgb(235, 237, 238) !important;
+}
+.border-purple {
+  border-color: rgb(140, 57, 254) !important;
+}
+.bg-lightpurple {
+  background: rgb(237, 233, 254) !important;
+}
+.bg-lightgreen {
+  background: rgb(208, 250, 229);
+}
+.text-green {
+  color: rgb(0, 153, 102);
+}
+.bg-green {
+  background: rgb(0, 153, 102);
+}
+.bg-pink {
+  background: rgb(248, 21, 97);
+}
+.bg-purple {
+  background: rgb(124, 37, 253) 10%;
+}
+#inputSearch:focus {
+  outline: none;
+  background: white;
+}
+.bg-transparentblack {
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(5px);
+}
+.input-focus:focus {
+  border: 2px solid rgb(140, 57, 254) !important;
+  outline: none;
+}
+.overflow-scroll {
+  overflow-y: scroll;
+}
+.overflow-scroll::-webkit-scrollbar {
+  width: 0px;
+}
+.textarea-width {
+  width: 110px;
+  resize: none;
+}
+.text-yellow {
+  color: rgb(255, 185, 0);
+}
+.bg-yellow {
+  background: rgb(255, 185, 0);
+}
+.bg-lightyellow {
+  background: rgb(255, 251, 235);
+}
+.text-red {
+  color: rgb(236, 0, 37);
+}
+.check-box-size {
+  width: 18px;
+  height: 18px;
+}
+.text-black-hover:hover span {
+  color: black;
+}
+.edit-hover:hover {
+  background: rgb(238, 242, 255) !important;
+  color: rgb(79, 57, 246) !important;
+}
+.emergency-hover:hover {
+  background: rgb(255, 241, 242) !important;
+  color: rgb(255, 32, 86) !important ;
+}
+.star-hover:hover {
+  background: rgb(243, 244, 246);
+  color: rgb(255, 185, 0);
+}
+.small-icon {
+  font-size: 0.75rem !important;
+}
+.notification-square {
+  width: 20px;
+  height: 20px;
+}
+.text-notification {
+  font-size: 0.5rem !important;
+}
+.bg-softred {
+  background: rgb(255, 32, 86);
+}
+.translate-notify-icon {
+  transform: translateX(2px);
+}
+.fw-500 {
+  font-weight: 500 !important;
+}
+.h-100px {
+  height: 20px !important;
+}
+.h-full {
+  height: auto;
+}
+.max-height {
+  max-height: 30vh;
+  overflow-y: scroll;
+}
+.max-height::-webkit-scrollbar {
+  width: 0;
+}
+.favshortcut-hover:hover {
+  background-color: rgb(255, 251, 235) !important;
+  border: 1px solid rgb(254, 231, 142) !important;
+}
+.favshortcut-hover:hover {
+  background-color: rgb(255, 251, 235) !important;
+  border: 1px solid rgb(254, 231, 142) !important;
+}
+.emergencyshortcut-hover:hover {
+  background-color: rgb(255, 241, 242) !important;
+  border: 1px solid rgb(255, 223, 227) !important;
+}
+.shortcut-fs-size {
+  font-size: 0.8rem;
+}
+.card-info-size {
+  font-size: 0.9rem;
+}
+.bg-softrem {
+  background: rgb(255, 228, 230);
+}
+.box-shadow-hover:hover {
+  box-shadow: 2px 2px 20px rgb(221, 223, 224);
+}
+.form-height {
+  height: 90vh !important;
+}
+.square-large2 {
+  height: 100px;
+  width: 100px;
+}

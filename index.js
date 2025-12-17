@@ -66,6 +66,7 @@ function displayContactCard(list) {
         var starNotify = "d-none";
       }
      var showlocation = list[i].address ? "d-block" : "d-none";
+     var showemail = list[i].email ? "d-block" : "d-none";
       var showemergencyword = list[i].isemergency ? "d-block" : "d-none";
       var bgGroup = "";
       var textcolorGroup = "";
@@ -132,7 +133,7 @@ function displayContactCard(list) {
                         </p>
                     </div>
                 </div>
-                <p class="my-2 d-flex align-items-center column-gap-2 card-info-size text-gray">
+                <p class="my-2 d-flex align-items-center column-gap-2 card-info-size text-gray ${showemail}">
                     <span
                         class="iconcontact-square  d-flex justify-content-center align-items-center bg-lightpurple rounded-2">
                         <i class="fa-solid fa-envelope text-purple small-icon"></i>

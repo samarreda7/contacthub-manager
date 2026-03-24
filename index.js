@@ -379,6 +379,8 @@ function deletecontact(id) {
         title: "Deleted!",
         text: "Your file has been deleted.",
         icon: "success",
+        showConfirmButton: false,
+        timer: 1500,
       });
       contactlist.splice(index, 1);
       localStorage.setItem("contacts", JSON.stringify(contactlist));
@@ -504,11 +506,12 @@ function clear() {
   email.value = "";
   address.value = "";
   notes.value = "";
+  group.value = "";
   isfavourite.checked = false;
   isemergency.checked = false;
   photoInput.value = "";
-   formimg.setAttribute("src", ""); 
-  formpic.classList.replace("d-flex", "d-none"); 
+  formimg.setAttribute("src", "");
+  formpic.classList.replace("d-flex", "d-none");
   formicon.classList.replace("d-none", "d-flex");
 }
 
@@ -594,9 +597,8 @@ function saveEditedForrm() {
     contactlist[editingContactIndex].isfavourite = isfavourite.checked;
     contactlist[editingContactIndex].isemergency = isemergency.checked;
     if (photoInput.files[0]) {
-      contactlist[
-        editingContactIndex
-      ].img = `images/${photoInput.files[0].name}`;
+      contactlist[editingContactIndex].img =
+        `images/${photoInput.files[0].name}`;
     }
     localStorage.setItem("contacts", JSON.stringify(contactlist));
     formBackground.classList.replace("d-flex", "d-none");

@@ -304,6 +304,7 @@ function AddContact() {
       title: "Missing Name",
       text: "Please enter a name for the contact! ",
     });
+    return;
   }
   if (!PhoneNumber.value || PhoneNumber.value.trim() === "") {
     Swal.fire({
@@ -311,7 +312,12 @@ function AddContact() {
       title: "Missing phone Number",
       text: "Please enter a Number for the contact! ",
     });
+    return;
   }
+  validateform(fullName);
+  validateform(PhoneNumber);
+  validateform(email);
+  validateform(address);
   if (
     fullName.classList.contains("is-valid") &&
     PhoneNumber.classList.contains("is-valid") &&

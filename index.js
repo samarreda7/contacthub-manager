@@ -507,6 +507,9 @@ function clear() {
   isfavourite.checked = false;
   isemergency.checked = false;
   photoInput.value = "";
+   formimg.setAttribute("src", ""); 
+  formpic.classList.replace("d-flex", "d-none"); 
+  formicon.classList.replace("d-none", "d-flex");
 }
 
 photoInput.addEventListener("change", function () {

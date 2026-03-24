@@ -65,8 +65,8 @@ function displayContactCard(list) {
       } else {
         var starNotify = "d-none";
       }
-     var showlocation = list[i].address ? "d-block" : "d-none";
-     var showemail = list[i].email ? "d-block" : "d-none";
+      var showlocation = list[i].address ? "d-block" : "d-none";
+      var showemail = list[i].email ? "d-block" : "d-none";
       var showemergencyword = list[i].isemergency ? "d-block" : "d-none";
       var bgGroup = "";
       var textcolorGroup = "";
@@ -382,6 +382,7 @@ function deletecontact(id) {
       });
       contactlist.splice(index, 1);
       localStorage.setItem("contacts", JSON.stringify(contactlist));
+      clear();
       displayContactCard(contactlist);
       console.log(contactlist);
     }
@@ -404,9 +405,11 @@ function closeform() {
   formBackground.classList.replace("d-flex", "d-none");
   if (SaveContact.classList.contains("d-none")) {
     SaveContact.classList.replace("d-none", "d-block");
+    clear();
   }
   if (Saveedit.classList.contains("d-block")) {
     Saveedit.classList.replace("d-block", "d-none");
+    clear();
   }
 }
 for (var i = 0; i < Close.length; i++) {
@@ -456,13 +459,13 @@ function totalcontacts(i) {
 }
 function validateform(element) {
   var isvalid = true;
-var regex = {
-  fullName: /^[\u0600-\u06FFa-zA-Z\s]{2,50}$/,
-  PhoneNumber: /^(010|011|012|015)\d{8}$/,
-  email: /^([a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})?$/,
-  address: /^([\u0600-\u06FFa-zA-Z0-9\s,.\-/]{0,200})?$/,
-  notes: /^([\u0600-\u06FFa-zA-Z0-9\s,.\-!?;:()'"/\n]{0,500})?$/,
-};
+  var regex = {
+    fullName: /^[\u0600-\u06FFa-zA-Z\s]{2,50}$/,
+    PhoneNumber: /^(010|011|012|015)\d{8}$/,
+    email: /^([a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})?$/,
+    address: /^([\u0600-\u06FFa-zA-Z0-9\s,.\-/]{0,200})?$/,
+    notes: /^([\u0600-\u06FFa-zA-Z0-9\s,.\-!?;:()'"/\n]{0,500})?$/,
+  };
   if (regex[element.id].test(element.value)) {
     element.classList.add("is-valid");
     element.classList.remove("is-invalid");
@@ -503,6 +506,7 @@ function clear() {
   notes.value = "";
   isfavourite.checked = false;
   isemergency.checked = false;
+  photoInput.value = "";
 }
 
 photoInput.addEventListener("change", function () {
